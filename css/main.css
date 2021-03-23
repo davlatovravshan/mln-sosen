@@ -78,6 +78,15 @@ button:focus, a:focus, input:focus {
 	}
 }
 
+@media (max-width: 768px) {
+
+	.body {
+		background-image: url('../img/bg.png');
+		background-size: contain;
+	}
+
+}
+
 @media(max-width: 576px) {
 	.wrapper {
 		width: 100%;
