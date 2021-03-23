@@ -1,0 +1,87 @@
+@import 'header.css';
+@import 'banner.css';
+@import 'info-block.css';
+
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+ul { 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+button:focus, a:focus, input:focus {
+	outline: none;
+}
+
+.body {
+	min-height: 100%;
+	background-image: url('../img/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+	max-width: 1200px;
+	padding: 0 30px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.main-btn {
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+@media(min-width: 1500px) {
+
+}
+
+@media(max-width: 1200px) {
+	.wrapper {
+		max-width: 992px;
+	}
+}
+
+@media(max-width: 992px) {
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@media(max-width: 576px) {
+	.wrapper {
+		width: 100%;
+		padding: 0 20px;
+	}
+}
+
