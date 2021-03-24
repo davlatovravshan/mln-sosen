@@ -1,0 +1,50 @@
+#info-card {
+	margin-top: 166px;
+}
+
+.info-card-parent {
+	display: flex;
+	justify-content: center;
+}
+.info-card-item {
+	background: #669999;
+	border-radius: 20px;
+	width: 740px;
+	max-width: 100%;
+	padding: 32px;
+}
+.info-card-text {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 140%;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+@media(max-width: 1276px) {
+	.info-card-item {
+		width: 680px;
+	}
+	.info-card-text {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 140%;
+	}
+	#info-card {
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 576px) {
+	#info-card {
+		margin-top: 80px;
+	}
+	.info-card-item {
+		padding: 32px 20px;
+	}
+	.info-card-text {
+		font-size: 20px;
+		line-height: 140%;
+	}
+}

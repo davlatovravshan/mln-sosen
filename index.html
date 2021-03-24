@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Document</title>
@@ -20,8 +21,10 @@
 				
 				<div class="header-parent">
 					<div class="header-right">
-						<img src="img/logo.png" alt="Logotype">
-						<h3>Миллион сосен</h3>
+						<div class="logo">
+							<img src="img/logo.png" alt="Logotype">
+							<h3>Миллион сосен</h3>
+						</div>
 					</div>
 					<div class="header-left">
 						<button class="main-btn header-btn">Стать участником</button>
@@ -66,11 +69,7 @@
 			<div class="wrapper">
 				<div class="info-block-parent">
 
-					<div class="info-block-item">
-						<p>Собрано</p>
-						<h3 class="info-block-count">899</h3>
-						<p>у. е.</p>
-					</div>
+					<div class="info-block-bg"></div>
 
 					<div class="info-block-item">
 						<p>Собрано</p>
@@ -79,9 +78,15 @@
 					</div>
 
 					<div class="info-block-item">
-						<p>Собрано</p>
+						<p>Посажено</p>
 						<h3 class="info-block-count">899</h3>
-						<p>у. е.</p>
+						<p>сосен</p>
+					</div>
+
+					<div class="info-block-item">
+						<p>Подано</p>
+						<h3 class="info-block-count">1</h3>
+						<p>заявок</p>
 					</div>
 
 				</div>
@@ -90,7 +95,215 @@
 		</section>
 
 
+		<section id="cards">
+			
+			<div class="wrapper">
+				<div class="cards">
+
+					<div class="card-item">
+						<div class="card-title-parent">
+							<h4 class="card-title">Есть деньги – помоги.</h4>
+						</div>
+						<div class="card-info">
+							<p class="card-text">За каждый подаренный тобой 1$ мы посадим 1 дерево. </p>
+						</div>
+						<div class="card-btn-parent">
+							<button class="main-btn card-btn">Стать участником</button>
+						</div>
+					</div>
+
+					<div class="card-item">
+						<div class="card-title-parent">
+							<h4 class="card-title">Есть принадлежащая тебе территория – оставь заявку.</h4>
+						</div>
+						<div class="card-info">
+							<p class="card-text">Народное голосование определит, в каком месте Беларуси мы посадим сосны бесплатно</p>
+						</div>
+						<div class="card-btn-parent">
+							<button class="main-btn card-btn">Стать участником</button>
+						</div>
+					</div>
+
+					<div class="card-item">
+						<div class="card-title-parent">
+							<h4 class="card-title">Есть стремление помогать  – стань частью команды или волонтером</h4>
+						</div>
+						<div class="card-info">
+							<p class="card-text">Помощь руками, с профессиональными навыками или без, очень важно для нас.</p>
+						</div>
+						<div class="card-btn-parent">
+							<button class="main-btn card-btn">Стать участником</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+		<section id="info-card">
+			
+			<div class="wrapper">
+				<div class="info-card-parent">
+
+					<div class="info-card-item">
+						<div class="info-card-info">
+							<p class="info-card-text">Есть желание, место и деньги, чтобы посадить свой сосновый бор – обращайся в любое время года!</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+		<section id="form-block">
+			
+			<div class="wrapper">
+				<div class="form-block-parent">
+
+					<div class="form-block-form-parent">
+						<div class="form-block-form">
+						
+							<div class="form-title-parent">
+								<h4 class="form-title">Оставить заявку</h4>
+							</div>
+
+							<form action="" class="form" method="post">
+
+								<div class="form-item">
+
+									<div class="form-label-parent">
+										<label for="name-input" class="required-label form-label">Ваше Имя</label>
+									</div>
+
+									<div class="form-info">
+										<input id="name-input" name="name" type="text" class="form-input">
+										<div class="form-error">
+											<p class="form-error-text">
+												Пожалуйста заполните это поле
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-item">
+
+									<div class="form-label-parent">
+										<label for="email-input" class="required-label form-label">Email</label>
+									</div>
+									
+									<div class="form-info">
+										<input id="email-input" name="email" type="text" class="form-input">
+										<div class="form-error">
+											<p class="form-error-text">
+												Пожалуйста введите Вашу почту
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-item">
+
+									<div class="form-label-parent">
+										<label for="theme-input" class="required-label form-label">Тема</label>
+									</div>
+									
+									<div class="form-info">
+										<select id="theme-input" name="theme" class="form-input form-select">
+	                                        <option value="member">Участник</option>
+	                                        <option value="volunteer">Волонтер</option>
+	                                        <option value="owner">Владелец</option>
+	                                        <option value="customer">Покупатель</option>
+										</select>
+										<div class="form-error">
+											<p class="form-error-text">
+												Пожалуйста выберите Вашу тему
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-item">
+
+									<div class="form-label-parent">
+										<label for="form-message" class="form-label">Сообщение</label>
+									</div>
+									
+									<div class="form-info">
+										<textarea name="message" id="form-message" class="form-input form-textarea"></textarea>
+									</div>
+								</div>
+
+								<div class="form-btn-parent">
+									<button type="submit" class="main-btn form-btn">Отправить</button>
+								</div>
+
+							</form>
+
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</section>
+
 	</div>
+
+
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="footer-parent">
+				
+				<div class="footer-item footer-logo-parent">
+					<div class="logo footer-logo">
+						<img src="img/logo.png" alt="" class="footer-logo-img">
+						<h3>Миллион сосен</h3>
+					</div>
+				</div>
+
+				<div class="footer-item footer-text-parent">
+					<p class="footer-text">
+						Если у вас есть желание быть частью нашего проекта, пожалуйста свяжитесь с нами или напишите в любом из мессенджеров
+					</p>
+				</div>
+
+				<div class="footer-item footer-info-parent">
+					<p class="footer-info">
+						Миллионсосен.бел 2021 Все права защищены
+					</p>
+				</div>
+
+				<div class="footer-item footer-socials-parent">
+					<ul class="footer-socials">
+
+						<li>
+							<a href="#" class="footer-socials-link">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="footer-socials-link">
+								<i class="fab fa-whatsapp"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="footer-socials-link">
+								<i class="fab fa-viber"></i>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</footer>
 
 <script src="js/main.js"></script>
 

@@ -1,5 +1,6 @@
 #info-block {
 	background: #fff;
+	margin-top: 100px;
 	padding: 30px 0;
 }
 
@@ -33,6 +34,10 @@
 	-webkit-text-fill-color: transparent;
 }
 
+.info-block-bg {
+	display: none;
+}
+
 @media (max-width: 768px) {
 
 	.info-block-parent {
@@ -56,11 +61,29 @@
 
 @media (max-width: 576px) {
 
+	#info-block {
+		background: transparent;
+		padding: 30px 0;
+		position: relative;
+	}
+
+	.info-block-bg {
+		display: block;
+		position: sticky;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 200px;
+		background: #fff;
+		z-index: 1;
+	}
+
 	.info-block-parent {
 		flex-direction: column;
 	}
 
 	.info-block-item {
+		z-index: 2;
 		margin: 30px 0;
 	}
 

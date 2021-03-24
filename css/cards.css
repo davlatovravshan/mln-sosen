@@ -1,0 +1,141 @@
+#cards {
+	margin-top: 205px;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 385px;
+}
+.card-item {
+	flex-basis: 33%;
+	background: #669999;
+	border-radius: 20px;
+	padding: 32px;
+	margin: 20px;
+	color: #fff;
+}
+/*.card-item:nth-child(2) {
+	margin: 20px 10px;
+}*/
+.card-title-parent {
+	margin-bottom: 16px;
+}
+.card-title {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.025em;
+	color: inherit;
+}
+.card-info {}
+.card-text {
+	font-size: 18px;
+	line-height: 130%;
+	color: inherit;
+}
+.card-btn-parent {
+	display: flex;
+	justify-content: center;
+	height: 0;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+.card-item:hover {
+	transition: all 0.3s ease;
+	background: #F9BF79;
+}
+.card-item:hover .card-btn-parent {
+	transition: all 0.3s ease;
+	margin-top: 32px;
+	height: auto;
+}
+.card-item:hover .card-title, .card-item:hover .card-text {
+	color: #222831;
+}
+.card-btn {
+	border: none;
+	color: #fff;
+	padding: 16px 32px;
+	background: #222831;
+	border-radius: 10px;
+}
+
+@media (max-width: 1276px) {
+
+	.cards {
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+	.card-btn-parent {
+		margin-top: 32px;
+		height: auto;
+	}
+
+	.card-item {
+		margin: 30px 0;
+		padding: 32px 100px;
+		text-align: center;
+		width: 680px;
+		max-width: 100%;
+		background: #F9BF79;
+		color: #222831;
+	}
+
+	.card-title-parent {
+		padding: 16px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	#cards {
+		margin-top: 140px;
+	}
+	.cards {
+		flex-direction: column;
+		align-items: center;
+	}
+	.card-item {
+		margin: 30px 0;
+		padding: 32px 40px;
+		text-align: center;
+		width: 480px;
+		max-width: 100%;
+		background: #F9BF79;
+		color: #222831;
+	}
+	
+	.card-title-parent {
+		padding: 0 16px;
+	}
+}
+
+@media (max-width: 576px) {
+	#cards {
+		margin-top: 100px;
+	}
+	.cards {
+		flex-direction: column;
+		align-items: center;
+	}
+	.card-item {
+		padding: 32px 16px;
+	}
+	.card-btn-parent {
+		opacity: 1;
+	}
+	.card-title-parent {
+		padding: 0;
+	}
+	.card-title {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.card-text {
+		font-size: 16px;
+		line-height: 130%;
+	}
+}

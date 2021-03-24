@@ -1,6 +1,10 @@
 @import 'header.css';
 @import 'banner.css';
 @import 'info-block.css';
+@import 'cards.css';
+@import 'info-card.css';
+@import 'form.css';
+@import 'footer.css';
 
 
 * {
@@ -39,7 +43,7 @@ img {
 	max-width: 100%;
 }
 
-button:focus, a:focus, input:focus {
+button:focus, a:focus, input:focus, textarea:focus, select:focus {
 	outline: none;
 }
 
@@ -47,14 +51,14 @@ button:focus, a:focus, input:focus {
 	min-height: 100%;
 	background-image: url('../img/bg.png');
 	background-size: cover;
+	background-position: top center;
 	background-repeat: no-repeat;
 }
 
 .wrapper {
-	max-width: 1200px;
+	max-width: calc(1332px);
 	padding: 0 30px;
 	margin: 0 auto;
-	position: relative;
 }
 
 .main-btn {
@@ -68,7 +72,7 @@ button:focus, a:focus, input:focus {
 
 @media(max-width: 1200px) {
 	.wrapper {
-		max-width: 992px;
+		max-width: 1100px;
 	}
 }
 
@@ -79,11 +83,6 @@ button:focus, a:focus, input:focus {
 }
 
 @media (max-width: 768px) {
-
-	.body {
-		background-image: url('../img/bg.png');
-		background-size: contain;
-	}
 
 }
 
