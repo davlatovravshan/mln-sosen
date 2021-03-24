@@ -2,6 +2,7 @@
 	padding: 85px 0;
 	background: #393E46;
 	color: #fff;
+	z-index: 99;
 }
 
 .footer-parent {
@@ -53,6 +54,10 @@
     line-height: 48px;
 }
 
+.form-block-parent-2 {
+	display: none;
+}
+
 
 @media (max-width: 1276px) {
 
@@ -62,6 +67,14 @@
 		max-width: 100%;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.form-block-parent-2 {
+		display: flex;
+	    justify-content: center;
+	    transform: translateY(-140px);
+	    margin: 0 20px;
+	    margin-bottom: -70px;
 	}
 
 	.footer-item {
@@ -79,7 +92,6 @@
 
 	#footer {
 		padding: 50px 0;
-		padding-top: 413px;
 	}
 
 	.footer-logo-parent {
@@ -91,9 +103,17 @@
 
 @media (max-width: 576px) {
 
+	#footer {
+		padding: 20px 0;
+	}
+
 	.footer-text-parent {
 		text-align: center;
 		padding: 0;
+	}
+
+	.form-block-parent-2 {
+	    margin-bottom: -100px;
 	}
 
 	.footer-text {

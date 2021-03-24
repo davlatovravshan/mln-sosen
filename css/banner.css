@@ -43,13 +43,17 @@
 
 @media (max-width: 1276px) {
 
+	#banner {
+		padding: 40px 0;
+	}
+
 	.banner-title {
 		font-size: 120px;
 		line-height: 146px;
 	}
 	.banner-title-2 {
 		font-size: 120px;
-		line-height: 180px;
+		line-height: 140px;
 	}
 	.banner-text {
 		font-weight: 500;
@@ -59,10 +63,6 @@
 }
 
 @media (max-width: 768px) {
-
-	#banner {
-		padding: 40px 0;
-	}
 
 	.banner-title {
 		font-size: 110px;
@@ -75,7 +75,7 @@
 @media (max-width: 576px) {
 
 	#banner {
-		padding: 72px 0;
+		padding: 68px 0;
 	}
 
 	.banner-title {
@@ -84,7 +84,7 @@
 	}
 
 	.banner-info {
-		margin: 44px 0 60px 0;
+		margin: 45px 0 60px 0;
 	}
 
 	.banner-text {

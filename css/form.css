@@ -110,6 +110,7 @@
 	#form-block {
 		margin-top: 74px;
 		margin-bottom: -540px;
+		display: none;
 	}
 
 }
@@ -138,6 +139,10 @@
 		margin-left: 0;
 		display: flex;
 		justify-content: center;
+	}
+
+	.form-block-form-parent {
+		padding: 25px 0;
 	}
 
 }

@@ -33,12 +33,13 @@
 	}
 	#info-card {
 		margin-top: 100px;
+		padding-bottom: 170px;
 	}
 }
 
 @media (max-width: 576px) {
 	#info-card {
-		margin-top: 80px;
+		margin-top: 70px;
 	}
 	.info-card-item {
 		padding: 32px 20px;
