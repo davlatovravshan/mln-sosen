@@ -68,7 +68,7 @@
 	height: 72px;
 }
 .form-input-error {
-	border: 2px solid #E77373;
+	border: 2px solid #E77373!important;
 }
 .form-input-success {
 	border: 2px solid #F9BF79;

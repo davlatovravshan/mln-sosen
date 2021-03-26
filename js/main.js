@@ -126,7 +126,7 @@ function showErrorOnSubmit(formErrors, myForm) {
 		
 		var element = myForm.find('[name=' + name + ']');
 
-		if (element.val() == '') {
+		if (element.val() == '' || element.hasClass('form-input-error')) {
 			addError(element.get(0));
 			enableForm = false;
 		}
@@ -138,6 +138,7 @@ function showErrorOnSubmit(formErrors, myForm) {
 }
 
 function addError(element) {
+	$(element).removeClass('form-input-success');
 	$(element).addClass('form-input-error');
 	$(element).siblings('.form-error').show();	
 }
@@ -145,6 +146,7 @@ function addError(element) {
 function noError(element) {
 	$(element).removeClass('form-input-error');
 	$(element).siblings('.form-error').hide();
+	$(element).addClass('form-input-success');
 }
 
 function validateEmail(email) {
