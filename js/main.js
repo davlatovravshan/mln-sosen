@@ -11,7 +11,7 @@ $(window).on('scroll load resize', function() {
 	let scrollPosition = $(window).scrollTop();
 
 	// Паралакс эффект
-	parallax.css('transform', 'translateY(' + scrollPosition * 0.3 + 'px)');
+	parallax.css('transform', 'translateY(' + scrollPosition * 0.4 + 'px)');
 
 	// Анимация счётчика
 	if (!enableShowAnimate) return false;
