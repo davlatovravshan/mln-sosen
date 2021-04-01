@@ -1,18 +1,29 @@
 #header {
 	background: #222831;
+	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	z-index: 999;
 }
 
 .header-parent {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	height: 86px;
 }
 .logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 .logo img {
@@ -24,13 +35,38 @@
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 22px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
 .header-left {}
+.navigation-list {
+	display: flex;
+	align-items: center;
+}
+.navigation-link {
+	padding: 8px 16px;
+	margin: 0 24px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #F9BF79;
+	transition: all 0.3s ease;
+}
+.navigation-link:hover {
+	transition: all 0.3s ease;
+	text-decoration-line: underline;
+}
+.navigation-link.active {
+	color: #fff;
+	pointer-events: none;
+}
 .header-btn {
 	font-weight: 500;
 	font-size: 18px;
@@ -40,9 +76,13 @@
 	color: #F9BF79;
 	background: #222831;
 	border: 1px solid #F9BF79;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 .header-btn:hover {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	color: #222831;
 	background: #F9BF79;

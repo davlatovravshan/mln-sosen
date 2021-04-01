@@ -1,9 +1,13 @@
 #info-card {
-	margin-top: 166px;
+	margin-top: 60px;
 }
 
 .info-card-parent {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 .info-card-item {
@@ -11,18 +15,22 @@
 	border-radius: 20px;
 	width: 740px;
 	max-width: 100%;
-	padding: 32px;
+	padding: 32px 50px;
+	text-align: center;
 }
 .info-card-text {
 	font-weight: 500;
 	font-size: 32px;
 	line-height: 140%;
-	text-align: center;
 	color: #FFFFFF;
+	margin-bottom: 20px;
 }
 
 
 @media(max-width: 1276px) {
+	#info-card {
+		padding-bottom: 170px;
+	}
 	.info-card-item {
 		width: 680px;
 	}
@@ -31,15 +39,11 @@
 		font-size: 24px;
 		line-height: 140%;
 	}
-	#info-card {
-		margin-top: 100px;
-		padding-bottom: 170px;
-	}
 }
 
 @media (max-width: 576px) {
 	#info-card {
-		margin-top: 70px;
+		margin-top: 50px;
 	}
 	.info-card-item {
 		padding: 32px 20px;

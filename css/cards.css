@@ -1,14 +1,21 @@
 #cards {
-	margin-top: 180px;
+	margin-top: 120px;
 }
 
 .cards {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: flex-start;
 	height: 385px;
 }
 .card-item {
+	-ms-flex-preferred-size: 33%;
 	flex-basis: 33%;
 	background: #669999;
 	border-radius: 20px;
@@ -36,17 +43,27 @@
 	color: inherit;
 }
 .card-btn-parent {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	height: 0;
 	overflow: hidden;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 .card-item:hover {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	background: #F9BF79;
 }
 .card-item:hover .card-btn-parent {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	margin-top: 32px;
 	height: auto;
@@ -65,7 +82,12 @@
 @media (max-width: 1276px) {
 
 	.cards {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		height: auto;
 	}
@@ -92,10 +114,15 @@
 
 @media (max-width: 768px) {
 	#cards {
-		margin-top: 140px;
+		margin-top: 100px;
 	}
 	.cards {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 	.card-item {
@@ -107,7 +134,7 @@
 		background: #F9BF79;
 		color: #222831;
 	}
-	
+
 	.card-title-parent {
 		padding: 0 16px;
 	}
@@ -115,10 +142,15 @@
 
 @media (max-width: 576px) {
 	#cards {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 	.cards {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 	.card-item {

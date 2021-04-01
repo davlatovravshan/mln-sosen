@@ -5,23 +5,28 @@
 @import 'info-card.css';
 @import 'form.css';
 @import 'footer.css';
-
+@import 'how-it-works.css';
+@import 'sponsor.css';
+@import 'own-territory.css';
 
 * {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 html {
 	overflow-x: hidden;
+//scroll-behavior: smooth;
 }
 
 body {
 	min-height: 100%;
+	margin: 0!important;
 }
 
-ul { 
+ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -61,18 +66,25 @@ button:focus, a:focus, input:focus, textarea:focus, select:focus {
 	overflow: hidden;
 }
 
+.main-dark-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: url('../img/dark-bg.png');
+	background-position: center;
+	background-size: cover;
+}
+
 .bg-sosna {
 	position: absolute;
-    width: 100%;
-    height: 100%;
-    left: auto;
-    right: auto;
-    text-align: center;
-    top: 0;
-    z-index: -1;
-    background: url(../img/bg2.png);
-    background-repeat: no-repeat;
-    background-position: center
+	width: 100%;
+	height: 100%;
+	left: auto;
+	right: auto;
+	text-align: center;
+	top: 0;
+	z-index: -1;
+	background: url(../img/bg2.png) no-repeat center;
 }
 
 .wrapper {
@@ -84,6 +96,10 @@ button:focus, a:focus, input:focus, textarea:focus, select:focus {
 .main-btn {
 	cursor: pointer;
 	border-radius: 10px;
+}
+
+.swal2-confirm {
+	box-shadow: none!important;
 }
 
 @media(min-width: 1500px) {
@@ -122,4 +138,3 @@ button:focus, a:focus, input:focus, textarea:focus, select:focus {
 		padding: 0 20px;
 	}
 }
-

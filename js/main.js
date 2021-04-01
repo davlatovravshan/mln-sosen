@@ -1,3 +1,25 @@
+// Якорь для кнопок
+
+let anchors = $('button[data-scroll]');
+
+anchors.on('click', function(event) {
+
+	event.preventDefault();
+
+	var block = $('#form');
+	var section = $(block).closest('#form-block');
+
+	if (section.css('display') == 'none') {
+		block = $('#form-sm');
+	}
+
+	window.scrollTo({
+		top: block.offset().top - 100,
+		behavior: 'smooth',
+	});
+
+})
+
 // Паралакс эффект и Анимация счётчика
 
 let parallax = $('.parallax');
@@ -42,7 +64,6 @@ $(window).on('scroll load resize', function() {
 });
 
 
-
 // Валидация Формы
 
 let requiredinputs = [
@@ -83,7 +104,72 @@ form.on('submit', function(event) {
 	}
 
 	var enableForm = showErrorOnSubmit(formErrors, myForm);
-	console.log(enableForm);
+	if (enableForm) {
+
+		var action = myForm.attr('action');
+		$('.form-spin').css('display', 'inline-block');
+
+		$.ajax({
+			url: action,
+			type: 'POST',
+			data: {
+				name: formElements['name'].value,
+				email: formElements['email'].value,
+				theme: formElements['theme'].value,
+				message: formElements['message'].value,
+			},
+			success: function(response) {
+
+				$('.form-spin').css('display', 'none');
+
+				const Toast = Swal.mixin({
+					toast: true,
+					position: 'top-end',
+					showConfirmButton: false,
+					timer: 3000,
+					timerProgressBar: true,
+					didOpen: (toast) => {
+						toast.addEventListener('mouseenter', Swal.stopTimer)
+						toast.addEventListener('mouseleave', Swal.resumeTimer)
+					}
+				})
+
+				Toast.fire({
+					icon: 'success',
+					title: 'Ваше сообщение отправлено!',
+					onClose: function() {
+						window.location.reload();
+					}
+				});
+
+			},
+			error: function() {
+
+				const Toast = Swal.mixin({
+					toast: true,
+					position: 'top-end',
+					showConfirmButton: false,
+					timer: 3000,
+					timerProgressBar: true,
+					didOpen: (toast) => {
+						toast.addEventListener('mouseenter', Swal.stopTimer)
+						toast.addEventListener('mouseleave', Swal.resumeTimer)
+					}
+				})
+
+				Toast.fire({
+					icon: 'error',
+					title: 'Ваше сообщение не отправлено!',
+					onClose: function() {
+						window.location.reload();
+					}
+				});
+
+			}
+		})
+
+	}
+
 });
 
 
@@ -123,7 +209,7 @@ function showErrorOnSubmit(formErrors, myForm) {
 
 	var enableForm = true;
 	formErrors.forEach(function(name) {
-		
+
 		var element = myForm.find('[name=' + name + ']');
 
 		if (element.val() == '' || element.hasClass('form-input-error')) {
@@ -140,7 +226,7 @@ function showErrorOnSubmit(formErrors, myForm) {
 function addError(element) {
 	$(element).removeClass('form-input-success');
 	$(element).addClass('form-input-error');
-	$(element).siblings('.form-error').show();	
+	$(element).siblings('.form-error').show();
 }
 
 function noError(element) {
