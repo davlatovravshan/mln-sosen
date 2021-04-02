@@ -1,3 +1,5 @@
+@import 'section.css';
+
 @import 'header.css';
 @import 'banner.css';
 @import 'info-block.css';
@@ -8,6 +10,8 @@
 @import 'how-it-works.css';
 @import 'sponsor.css';
 @import 'own-territory.css';
+@import 'votes.css';
+
 
 * {
 	font-family: 'Montserrat', sans-serif;
@@ -71,7 +75,7 @@ button:focus, a:focus, input:focus, textarea:focus, select:focus {
 	flex-direction: column;
 	justify-content: flex-end;
 	background: url('../img/dark-bg.png');
-	background-position: center;
+	background-position: top center;
 	background-size: cover;
 }
 

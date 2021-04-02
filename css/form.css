@@ -11,9 +11,6 @@
 	-ms-flex-pack: center;
 	justify-content: center;
 }
-.form-block-form {
-	padding: 0 20px;
-}
 .form-block-form-parent {
 	width: 740px;
 	max-width: 100%;
@@ -185,7 +182,7 @@ select.form-input {
 		-ms-flex-pack: center;
 		justify-content: center;
 	}
-
+	
 	.form-block-form-parent {
 		padding: 25px 0;
 	}

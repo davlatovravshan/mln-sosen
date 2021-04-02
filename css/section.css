@@ -1,0 +1,57 @@
+.simple-section {
+	margin-top: 120px;
+}
+.section-content {
+	display: flex;
+	justify-content: space-between;
+}
+.section-title-parent {
+	margin-bottom: 60px;
+}
+.section-title {	
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 140%;
+	color: #FFFFFF;
+}
+.mini-section-parent {
+	margin-top: 50px;	
+}
+.mini-section-title-parent {
+	margin-bottom: 25px;
+}
+.mini-section-title {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.025em;
+	color: #FFFFFF;
+}
+.mini-section-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+
+.card {
+	background: #FFFFFF;
+	border-radius: 20px;
+	padding: 16px;
+	margin-bottom: 25px;
+	max-width: 100%;
+}
+.card-title {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.025em;
+	color: #222831;
+	margin-bottom: 11px;
+}
+.card-text {
+	font-size: 18px;
+	line-height: 130%;
+	color: #222831;
+}

@@ -2,7 +2,30 @@
 	padding-left: 32px;	
 }
 .section-form {
+	width: 590px;
 	padding: 53px 89px;
 	background: #222831;
 	border-radius: 20px;
+}
+
+.form-info {
+	position: relative;
+}
+
+.input-span-img {
+	position: absolute;
+	top: 11px;
+	right: 16px;
+	opacity: 0.2;
+}
+
+.column-form-item {
+	flex-direction: column;
+}
+.column-form-item .form-info {
+	margin-top: 10px;
+	margin-left: 132px;
+}
+.column-form-item .form-label-parent  {
+	width: 100%;
 }

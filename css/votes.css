@@ -1,0 +1,44 @@
+.vote-card {
+	padding: 24px;
+	width: 590px;
+	margin-bottom: 32px;
+}
+.vote-card-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.vote-card-content .card-text {
+	margin-bottom: 16px;
+}
+.vote-card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+.more-link {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-decoration-line: underline;
+	color: #393E46;
+}
+.votes-info {}
+.votes-info, .votes-amount {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: right;
+	color: #669999;
+}
+.votes-card-left {
+	padding-right: 25px;
+	flex-basis: 90%;
+}
+.votes-card-right {
+	flex-basis: 61px;
+}
+.votes-img {
+	width: 60px;
+	height: 60px;
+}
