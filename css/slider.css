@@ -1,0 +1,132 @@
+.slider {
+	position: relative;
+	padding-bottom: 100px;
+	width: 100%;
+	transform: translateX(-30px);
+}
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	justify-content: space-between;
+}
+/* Слайд */
+.slick-slide {
+
+}
+.slick-slide:focus{
+	outline: none;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+	cursor: pointer;
+	position: absolute;
+	right: 100px;
+	bottom: 0;
+	width: 36px;
+	height: 36px;
+	font-size: 0;
+	border: none;
+	background: #F9BF79;
+	border-radius: 50%;
+}
+.slick-arrow:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -8px;
+	width: 36px;
+	height: 40px;
+}
+.slick-prev {
+	margin-right: 60px;
+}
+.slick-prev:before {
+	background: url('../img/slider/arrow-prev.png') 0 0 / 100% no-repeat;
+	right: 8px;
+}
+.slick-next:before {
+	background: url('../img/slider/arrow-next.png') 0 0 / 100% no-repeat;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+	
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+.slider-top {
+	width: calc(298px + 15px);
+	margin: 0 auto;
+	position: relative;
+	padding: 15px;
+}
+.slider-img-bg {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	border-radius: 50%;
+	width: 280px;
+	height: 280px;
+}
+
+
+.team-slider .slider-img-bg {
+	background: #F9BF79;
+}
+
+.vacancies-slider .slider-img-bg {
+	background: #fff;
+}
+
+.slider-image {
+	width: 280px;
+	height: 280px;
+}
+
+.slider-title {
+	margin-top: 40px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: -0.025em;
+	color: #FFFFFF;
+}
+
+.slider-text {
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #FFFFFF;
+}
