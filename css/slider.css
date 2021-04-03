@@ -1,8 +1,15 @@
-.slider {
+.simple-slider {
 	position: relative;
-	padding-bottom: 100px;
-	width: 100%;
-	transform: translateX(-30px);
+	padding-bottom: 80px;
+	width: calc(100% - 35px);
+	margin-left: auto;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.slider-item {
+	width: 298px;
+	margin-right: 60px;
 }
 
 /* Слайдер */
@@ -18,7 +25,6 @@
 /* Лента слайдов */
 .slick-track{
 	display: flex;
-	justify-content: space-between;
 }
 /* Слайд */
 .slick-slide {
@@ -39,7 +45,8 @@
 .slick-arrow{
 	cursor: pointer;
 	position: absolute;
-	right: 100px;
+	margin-bottom: 2px;
+	right: 50px;
 	bottom: 0;
 	width: 36px;
 	height: 36px;
@@ -52,7 +59,7 @@
 	content: '';
 	position: absolute;
 	top: 0;
-	right: -8px;
+	right: -6px;
 	width: 36px;
 	height: 40px;
 }
@@ -61,7 +68,7 @@
 }
 .slick-prev:before {
 	background: url('../img/slider/arrow-prev.png') 0 0 / 100% no-repeat;
-	right: 8px;
+	right: 6px;
 }
 .slick-next:before {
 	background: url('../img/slider/arrow-next.png') 0 0 / 100% no-repeat;

@@ -1,0 +1,33 @@
+.news-slider-card {
+	padding: 0;
+}
+
+.news-slider .slider-item {
+	width: 590px;
+	margin-right: 32px;
+}
+
+.news-slider-content {
+	padding: 32px 40px 48px 40px;
+}
+.news-slider-thumb {
+	height: 238px;
+	overflow: hidden;
+}
+.news-slider-thumb img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px 20px 0 0;
+}
+
+.news-slider-title, .news-slider-text {
+	text-align: left;
+	color: #222831;
+}
+.news-slider-title {
+	margin-top: 16px;
+}
+.news-slider-text {
+	margin: 16px 0;
+}
