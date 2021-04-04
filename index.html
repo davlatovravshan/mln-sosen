@@ -196,55 +196,44 @@
 						<div class="form-block-form">
 						
 							<div class="form-title-parent">
-								<h4 class="form-title">Оставить заявку</h4>
+								<h4 class="form-title">Стать спонсором</h4>
 							</div>
 
 							<form action="" class="contact-form form" method="post">
 
-								<div class="form-item">
-
-									<div class="form-label-parent">
-										<label for="name-input" class="required-label form-label">Ваше Имя</label>
-									</div>
-
-									<div class="form-info">
-										<input id="name-input" name="name" type="text" class="form-input">
-										<div class="form-error">
-											<p class="form-error-text">
-												Пожалуйста заполните это поле
-											</p>
+								<div class="form-item form-item-lg">
+										
+									<div class="form-info radion-form-info">
+										<div class="radion-item">
+											<input checked class="radio-input" id="radio-1" type="radio" name="amount">
+											<label class="radio-label" for="radio-1">5 сосен</label>
+										</div>
+										<div class="radion-item">
+											<input class="radio-input" id="radio-2" type="radio" name="amount">
+											<label class="radio-label" for="radio-2">10 сосен</label>
+										</div>
+										<div class="radion-item">
+											<input class="radio-input" id="radio-3" type="radio" name="amount">
+											<label class="radio-label" for="radio-3">50 сосен</label>
+										</div>
+										<div class="radion-item">
+											<input class="radio-input" id="radio-4" type="radio" name="amount">
+											<label class="radio-label" for="radio-4">100 сосен</label>
 										</div>
 									</div>
+
 								</div>
 
-								<div class="form-item">
+								<div class="form-item form-item-lg">
+										
 
-									<div class="form-label-parent">
-										<label for="email-input" class="required-label form-label">Email</label>
-									</div>
-									
-									<div class="form-info">
-										<input id="email-input" name="email" type="email" class="form-input">
-										<div class="form-error">
-											<p class="form-error-text">
-												Пожалуйста введите Вашу почту
-											</p>
-										</div>
-									</div>
-								</div>
 
-								<div class="form-item">
-
-									<div class="form-label-parent">
-										<label for="theme-input" class="required-label form-label">Тема</label>
-									</div>
-									
 									<div class="form-info">
 										<select id="theme-input" name="theme" class="form-input form-select">
-	                                        <option value="member">Участник</option>
-	                                        <option value="volunteer">Волонтер</option>
-	                                        <option value="owner">Владелец</option>
-	                                        <option value="customer">Покупатель</option>
+	                                        <option>Ваш вариант</option>
+	                                        <option value="Волонтер">Волонтер</option>
+	                                        <option value="PR менеджер">PR менеджер</option>
+	                                        <option value="SMM специалист">SMM специалист</option>
 										</select>
 										<div class="form-error">
 											<p class="form-error-text">
@@ -252,21 +241,40 @@
 											</p>
 										</div>
 									</div>
+
+								</div>
+
+
+								<div class="form-item with-checkbox">
+
+									<div class="form-label-parent">
+										<label for="name-input" class="form-label">Ваше Имя</label>
+									</div>
+
+									<div class="form-info">
+										<input id="name-input" name="name" type="text" class="form-input">
+										<div class="form-item-check">
+											<input id="name-check" type="checkbox" name="anonim" class="form-checkbox">
+											<label class="checkbox-label" for="name-check">Отправить анонимно</label>
+										</div>
+									</div>
 								</div>
 
 								<div class="form-item">
 
 									<div class="form-label-parent">
-										<label for="form-message" class="form-label">Сообщение</label>
+										<label class="form-label">Сообщение</label>
 									</div>
 									
 									<div class="form-info">
-										<textarea name="message" id="form-message" class="form-input form-textarea"></textarea>
+										<input name="messsage" type="text" class="form-input">
 									</div>
 								</div>
-
+								<br>
 								<div class="form-btn-parent">
-									<button type="submit" class="main-btn form-btn">Отправить</button>
+									<button name="contact-form-btn" type="submit" class="main-btn form-btn">
+										Перейти к оплате
+									</button>
 								</div>
 
 							</form>

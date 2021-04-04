@@ -1,6 +1,5 @@
 #form-block {
-	margin-top: 60px;
-	padding-bottom: 180px;
+	margin: 60px 0;
 }
 
 .form-block-parent {
@@ -44,6 +43,9 @@
 	display: flex;
 	margin-bottom: 16px;
 }
+.form-item.with-checkbox {
+	margin-bottom: 24px;
+}
 .form-label-parent {
 	width: 100px;
 	margin-right: 32px;
@@ -73,6 +75,10 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: #222831;
+}
+.form-item-lg .form-info,
+.form-item-lg .form-input {
+	width: 100%;
 }
 select.form-input {
 	padding: 8px 16px!important;
@@ -133,6 +139,60 @@ select.form-input {
 
 .inline-block {
 	display: inline-block;
+}
+
+.form-item-check {
+	margin-top: 10px;
+}
+
+.checkbox-label {
+	padding-left: 36px;
+	font-size: 12px;
+	line-height: 20px;
+	cursor: pointer;
+	color: #E5E5E5;
+}
+.checkbox-label:before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0px;
+	bottom: 0;
+	border: 1px solid #FFFFFF;
+}
+
+.radio-input, .form-checkbox {
+	-webkit-appearance: none;
+	appearance: none;
+	display: block;
+	height: 0;
+}
+
+.radion-form-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.radio-label {
+	cursor: pointer;
+	text-align: center;
+	white-space: nowrap;
+	display: block;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: #222831;
+	height: 84px;
+	background: #fff;
+	border-radius: 4px;
+	padding: 32px 16px;
+}
+
+
+.radio-input:checked + .radio-label {
+	background: #F9BF79;
 }
 
 @media (max-width: 1276px) {
