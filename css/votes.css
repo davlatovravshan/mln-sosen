@@ -14,7 +14,7 @@
 }
 
 .vote-card-top-img {
-	flex-basis: 200px;
+	flex-basis: 250px;
 	margin-left: 20px;
 	text-align: center;
 }
@@ -102,6 +102,10 @@
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
+	}
+
+	.vote-card-top-img {
+		margin-left: 0;	
 	}
 
 }
