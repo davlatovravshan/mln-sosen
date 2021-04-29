@@ -25,12 +25,16 @@
 
 html {
 	overflow-x: hidden;
-//scroll-behavior: smooth;
+	/*scroll-behavior: smooth;*/
 }
 
 body {
 	min-height: 100%;
-	margin: 0!important;
+	margin: 0;
+}
+
+.no-scroll {
+	overflow: hidden;
 }
 
 ul {
@@ -58,7 +62,11 @@ img {
 	max-width: 100%;
 }
 
-button:focus, a:focus, input:focus, textarea:focus, select:focus {
+button:focus, 
+a:focus, 
+input:focus, 
+textarea:focus, 
+select:focus {
 	outline: none;
 }
 
@@ -109,14 +117,49 @@ button:focus, a:focus, input:focus, textarea:focus, select:focus {
 	box-shadow: none!important;
 }
 
+.show-sm {
+	display: none;
+}
+
 @media(min-width: 1500px) {
 
 }
 
 @media(max-width: 1200px) {
+
 	.wrapper {
 		max-width: 1100px;
 	}
+
+	.body {
+		background: none;
+		overflow: unset;
+	}
+
+	.body-top {
+		position: relative;
+		height: 100%;
+		background-image: url('../img/bg-clear-sm.png');
+		background-size: cover;
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1;
+		overflow: hidden;
+		padding-bottom: 150px;
+	}
+
+	.body-bottom {
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 9;
+		transform: translateY(-180px);
+	}
+
+	.main-dark-content {
+		padding-top: 750px;
+	}
+
 }
 
 @media(max-width: 992px) {
@@ -125,23 +168,25 @@ button:focus, a:focus, input:focus, textarea:focus, select:focus {
 	}
 }
 
-@media (max-width: 768px) {
-
-	/*.body {
-		background-image: url('../img/bg-sm.png');
-	}*/
-
-	/*.bg-sosna {
-	    background: url(../img/bg2.png);
-	    background-repeat: no-repeat;
-	    background-position: center
-	}*/
-
-}
+@media (max-width: 768px) {}
 
 @media(max-width: 576px) {
+
+	.main-dark-content {
+	    padding-top: 850px;
+	}
+	
 	.wrapper {
 		width: 100%;
 		padding: 0 20px;
 	}
+
+	.show-sm {
+		display: block;
+	}
+
+	.bg-sosna {
+		height: 90%;
+	}
+
 }

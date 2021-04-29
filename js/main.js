@@ -1,3 +1,14 @@
+let menuBtn = $('.menu-burger');
+let menu = $('.menu-sm');
+let body = $('body');
+
+menuBtn.on('click', function() {
+	$(this).toggleClass('active');
+	menu.toggleClass('active');
+	$('html').toggleClass('no-scroll');
+});
+
+
 // Якорь для кнопок
 
 let anchors = $('button[data-scroll]');

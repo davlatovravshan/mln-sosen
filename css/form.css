@@ -1,5 +1,5 @@
 #form-block {
-	margin: 60px 0;
+	margin: 80px 0;
 }
 
 .form-block-parent {
@@ -10,6 +10,7 @@
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+
 .form-block-form-parent {
 	width: 740px;
 	max-width: 100%;
@@ -42,6 +43,7 @@
 	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 16px;
+	justify-content: space-between;
 }
 .form-item.with-checkbox {
 	margin-bottom: 24px;
@@ -120,6 +122,7 @@ select.form-input {
 .form-select {}
 
 .form-btn-parent {
+	margin-top: 16px;
 	margin-left: 132px;
 }
 .form-btn {
@@ -128,7 +131,7 @@ select.form-input {
 	line-height: 22px;
 	text-align: center;
 	color: #222831;
-	padding: 8px 16px;
+	padding: 16px 24px;
 	background: #F9BF79;
 	border: 1px solid #F9BF79;
 }
@@ -169,7 +172,7 @@ select.form-input {
 	height: 0;
 }
 
-.radion-form-info {
+.radio-form-info {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -197,16 +200,21 @@ select.form-input {
 
 @media (max-width: 1276px) {
 
+	#form-block {
+		margin: 80px 0;
+		margin-bottom: 0;
+	}
+
 	.form-block-form-parent {
 		width: 680px;
 		opacity: 1;
 	}
 
-	#form-block {
+	/*#form-block {
 		margin-top: 50px;
 		margin-bottom: -540px;
 		display: none;
-	}
+	}*/
 
 }
 
@@ -250,10 +258,26 @@ select.form-input {
 }
 
 
-@media (max-width: 340px) {
+@media (max-width: 576px) {
 
-	.form-input {
-		width: 250px;
+	.radio-form-info {
+		flex-wrap: wrap;
 	}
 
+	.radio-item {
+		height: 84px;
+		margin-bottom: 16px;
+		flex-basis: calc(50% - 7px);
+	}
+
+	.form-input {
+		width: 100%;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.form-title {
+	    font-size: 18px;
+		line-height: 140%;
+	}
 }

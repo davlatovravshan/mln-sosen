@@ -28,3 +28,54 @@
 	line-height: 130%;
 	color: #FFFFFF;
 }
+
+
+@media (max-width: 1276px) {
+
+	.cards-content {
+		padding: 0;
+	}
+
+	.how-it-works .text-content {
+		padding: 0;
+	}
+
+	.info-card {
+		width: calc(100% / 4 - 10px);
+	}
+
+}
+
+@media (max-width: 992px) {
+
+	.cards-content {
+		padding: 0;
+	}
+
+	.how-it-works .text-content {
+		padding: 0;
+	}
+
+	.info-card {
+		padding: 0 20px;
+		width: calc(100% / 2 - 10px);
+	}
+
+}
+
+
+@media (max-width: 576px) {
+	.info-card p {
+		font-size: 18px;
+		line-height: 140%;
+	}
+
+	.info-card {
+		width: 100%;
+	}
+
+	.text {
+		font-size: 16px;
+		line-height: 140%;
+	}
+}

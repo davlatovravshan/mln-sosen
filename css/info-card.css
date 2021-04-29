@@ -29,7 +29,7 @@
 
 @media(max-width: 1276px) {
 	#info-card {
-		padding-bottom: 170px;
+		padding-bottom: 0;
 	}
 	.info-card-item {
 		width: 680px;
@@ -41,10 +41,16 @@
 	}
 }
 
-@media (max-width: 576px) {
-	#info-card {
-		margin-top: 50px;
+
+@media (max-width: 768px) {
+
+	.info-card-item {
+		width: 480px;
 	}
+
+}
+
+@media (max-width: 576px) {
 	.info-card-item {
 		padding: 32px 20px;
 	}

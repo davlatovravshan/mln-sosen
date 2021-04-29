@@ -1,11 +1,21 @@
 .section-form-parent {
 	padding-left: 32px;	
+	max-width: 100%;
 }
 .section-form {
+	padding: 53px 0;
+	max-width: 100%;
 	width: 590px;
-	padding: 53px 89px;
 	background: #222831;
 	border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-block-form {
+	width: 412px;
+    max-width: 100%;
+    padding: 0 20px;
 }
 
 .form-info {
@@ -24,8 +34,51 @@
 }
 .column-form-item .form-info {
 	margin-top: 10px;
-	margin-left: 132px;
 }
 .column-form-item .form-label-parent  {
 	width: 100%;
+}
+
+.column-form-item textarea {
+	width: 100%;
+}
+
+.own-territory .form-btn-parent {
+	margin: 0;
+	margin-top: 32px;
+	text-align: center;
+}
+
+
+@media (max-width: 1276px) {
+
+	.section-form-parent {
+		padding: 0;	
+		margin-top: 56px;
+	}
+
+	.section-form {
+		width: 692px;
+	}
+
+}
+
+
+@media (max-width: 768px) {
+
+	.input-span-img {
+		opacity: 1;
+	}
+
+	.section-form {
+		width: 680px;
+	}
+
+}
+
+
+@media (max-width: 576px) {
+	.section-form {
+		padding: 32px 0;
+	}
 }
